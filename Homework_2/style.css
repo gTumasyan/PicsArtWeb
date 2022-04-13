@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+    padding-bottom: 10%;
+}
+nav{
+    padding-bottom:5%;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    height:10px;
+    background: lightblue;
+    display: block;
+    text-align: center;
+
+}
+.nav_list{
+    display: flex;
+    justify-content: center;
+}
+.nav_list li{
+    display: inline-block;
+    margin:30px 50px;
+}
+.nav_links{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    font-family:Bebas Neue;
+}
+
+.main_img{
+    margin-top:60px;
+    width: 100%;
+    height:350px;
+    background-image:url(images/head.jpg);
+    background-color:black;
+    background-size:contain;
+}
+.main_img h1{
+    font-size: 400px;
+}
+.container{
+    display: flex;
+    grid-gap: 30px;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 25px;
+}
+#section1{
+    height:500px;
+    margin: 10px;
+    padding:50px;
+    background-color:antiquewhite;
+}
+.shop {
+    border-radius:10%;
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    display:block;
+}
+.weekly {
+    border-radius:10%;
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    display:block;
+}
+.week{
+    background-image:url(images/paris.jpg);
+}
+.week1{
+    background-image:url(images/milan.jpg);
+}
+.week2{
+    background-image:url(images/newyork.jpg);
+}
+.week3{
+    background-image:url(images/london.jpg);
+}
+.shop{
+    background-image:url(images/Parislook\ .jpg);
+    background-size: cover;
+    display:block;
+}
+.shop1{
+    background-image:url(images/milnalook.jpg);
+}
+.shop2{
+    background-image:url(images/newyorklook.jpg);
+}
+.shop3{
+    background-image:url(images/londonlook.jpg);
+}
+header h1{
+    text-align: center;
+}
+.shop h1{
+    left:5%;
+}
+
+.weekly h1{
+    left:5%;
+}
+aside h1{
+    top:3%;
+    left:10%;
+}
+aside{
+    background-image:url(images/aside.jpg);
+    background-size: cover;
+}
+h1{
+    position:relative;
+    top:5%;
+    color:pink;
+    text-transform:uppercase;
+    font-family:Bebas Neue;
+    font-size:40px;
+}
+
+
+p{
+    font-family: cairo;
+    font-weight: 700;
+    position:relative;
+    top:20%;
+    left:10%;
+    color:black;
+    width:200px;
+}
+    button{
+    position:relative;
+    top:20%;
+    left:2%;
+    border: none;
+    border-radius:10px;
+    color:pink;
+    background:none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#section2{
+    height:800px;
+    margin: 10px;
+    padding:50px;
+    display: flex;
+}
+aside{
+    background-color:aquamarine;
+    width:80%;
+    height:825px;
+    border-radius: 35px;
+}
+aside{
+    display: block;
+}
+aside input{
+    margin-top:3%;
+    margin-left: 10%;
+    border-radius: 10px;
+    border:none;
+    padding: 3px 3px;
+}
+aside label{
+    color:white;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 20px;
+    height: 350px;
+    width:100%;
+    padding: 5%;
+    background-color:antiquewhite;
+}
+footer figure{
+    font-family: cairo;
+    height:300px;
+    position:relative;
+}
+footer details{
+    width: 200px;
+    font-family: cairo;
+}
+footer img{
+    height:300px;
+    border-radius: 25px;
+}
+footer p{
+    top:0;
+    font-weight: 100;
+    font-size: 20px;
+    left:-5%;
+}
+footer h1{
+    top:0;
+    left:-5%;
+}

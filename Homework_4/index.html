@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="audio">
+            <audio controls>
+                    <source src="voice/h.mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls autoplay>
+                <source src="voice/h.mp3" type="audio/mp3">
+                <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            
+            <audio controls autoplay muted>
+                <source src="voice/h.mp3" type="audio/mp3">
+                <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="sign">
+            <form>
+                <h1>Sign Up</h1>
+                <p>It's quick and easy</p>
+                <br>
+                <input type="text" placeholder="John">
+                <input type="text" placeholder="Doe"><br><br>
+                <input type="text" placeholder="john@mail.com"><br><br>
+                <input type="text" placeholder="john@mail.com"><br><br>
+                <input type="password" placeholder="********"><br><br>
+
+                <a href="#"><p style="font-size:11px;">Birthday
+                    <i class="fa fa-question-circle"></i></p></a>
+                <select name="months" id="month-select">
+                    <option value="apr">Apr</option>
+                    <option value="may">May</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="aug">Aug</option>
+                    <option value="sep">Sep</option>
+                    <option value="oct">Oct</option>
+                    <option value="nov">Nov</option>
+                    <option value="dec">Dec</option>
+                    <option value="jan">Jan</option>
+                    <option value="feb">Feb</option>
+                    <option value="mar">Mar</option>
+                </select> 
+
+                <select name="days"value="15" id="day-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="15">15</option>
+                </select>
+
+                <select name="years" value="2022" id="year-select">
+                    <option value="2022">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+
+                <br><br>
+                <a href="#">
+                    <p style="font-size:11px;">Gender
+                        <i class="fa fa-question-circle"></i></p></a>
+                    <div class="gender">
+                        <div class="gen">
+                            <label name="gender">Female</label>
+                            <input type="radio" name="gender" value="female">
+                        </div>
+                        <div class="gen">
+                            <label name="gender">Male</label>
+                            <input type="radio" name="gender" value="male">
+                        </div>
+                        <div class="gen">
+                            <label name="gender">Custom</label>
+                            <input type="radio" name="gender" value="costum">
+                        </div>
+                    </div>
+            </form>
+            <button type="button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

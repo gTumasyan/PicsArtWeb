@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -42,4 +43,50 @@ button{
     margin-top:5%;
     background-color: green;
     border-radius: 10px;
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.audio{
+    width:50%;
+    height: 500px;
+    border:solid 5px black;
+}
+.sign{
+    padding-left:25px;
+    
+}
+.form{
+    border: solid 10px black;
+}
+.sign{
+    width:50%;
+    height: 500px;
+    border:solid 5px black;
+}
+.gen{
+    border:solid 1px black;
+    border-radius: 5px;
+    width:100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.gender{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+button{
+    width:200px;
+    height:50px;
+    margin-left:15%;
+    margin-top:5%;
+    background-color: green;
+    border-radius: 10px;
+>>>>>>> 4ba2827f3454280c3cbad959b218cd35f57c42bf
 }

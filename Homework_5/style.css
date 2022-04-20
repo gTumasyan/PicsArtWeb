@@ -1,0 +1,44 @@
+/* Element Selectors */
+h1,
+h2,
+span{
+    color:orange;
+    background-color:black;
+}
+
+/* Class Selectors */
+.paragraph1{
+    color:red;
+}
+.paragraph2{
+    color:rgb(255, 0, 0);
+}
+.paragraph3{
+    color:#f30e0e;
+}
+.paragraph4{
+    color:rgba(247, 8, 8, 0.5);
+}
+
+/* ID Selectors */
+#paragraph5{
+    color:hsl(0, 94%, 50%);
+}
+#wrapper{
+    margin: 40px;
+    text-align: center;
+    background-color:skyblue;
+    border: 5px solid black;
+}
+
+.div1>p{
+    color:green;
+}
+
+/* Inheritance */
+.container{
+    margin: 40px;
+    text-align: center;
+    border: 5px solid black;
+    color:red;
+}

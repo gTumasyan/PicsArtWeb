@@ -1,0 +1,60 @@
+.box{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    background-color:red;
+    margin:10px;
+    text-align:center;
+    line-height:200px;
+}
+
+.box1{
+    margin-right:50px;
+    margin-left:50px;
+}
+
+.container{
+    display:flex;
+}
+
+img{
+    margin:20px 10px 50px 10px;
+}
+
+.bor{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    background-color:green;
+    margin:10px;
+    text-align:center;
+    line-height:200px;
+}
+
+.bor1{
+    border: 10px solid #000;
+}
+.bor2{
+    border-top:10px dotted #000;
+}
+.bor3{
+    border-left: 10px dashed #000;
+}
+
+.rand{
+    height:200px;
+    width:200px;
+    background-color:red;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+}
+
+.rand1{
+    min-height:100px;
+    min-width:500px;
+}
+.rand2{
+    max-height:100px;
+    max-width:500px;
+}

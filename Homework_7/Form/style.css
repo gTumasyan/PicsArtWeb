@@ -1,0 +1,99 @@
+
+* { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header > h2 {
+    margin: 0;
+    color: #4f46a5;
+}
+
+.header > h4 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,.4);
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    background-color: #dd8a2a;
+    height: 100vh;
+}
+.left{
+    background-color: #e6d6f7;
+    width: 40%;
+    height: 100vh;
+    position: relative;
+}
+.cont1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cont1{
+    background-color: #f7f6f4;
+    width: 440px;
+    height: 400px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,.4);
+}
+.cont1 form .dta{
+    display: inline-block;
+    width: 34%;
+    height: 100%;
+}
+.cont1 form .exo2{
+    margin-left: 24%; 
+}
+.cont1 form .exo input{
+    padding-left: 10px;
+}
+.cont1 form .data{
+    height: 25px;
+    width: 100%;
+    margin: 20px 0;
+}
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+form .data textarea{
+    resize: vertical;
+    width: 100%;
+    max-height: 130px;
+}
+.button{
+    margin-top: 15%;
+    height: 50px;
+    width: 150px;
+    background: linear-gradient(#e66465, #4f46a5);
+    border: none;
+    color:rgb(19, 19, 19);
+    border-radius: 35px;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+.button:hover{
+    background: linear-gradient(rgb(145, 143, 143), #e66465);
+    color:white;
+}
+
+.right{
+    background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    height: 100%;
+    width: 60%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

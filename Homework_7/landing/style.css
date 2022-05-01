@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2{
+    font-family: 'Anton', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* header */
+h1{
+    padding-top: 20px;
+    font-size: 52px;
+}
+p{
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+nav{
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    background-color: #827397;
+}
+.logo, .list{
+    display: inline-block;
+}
+.logo{
+    margin-left:10px ;
+    width: 70%;
+}
+.list{
+    width: 20%;
+    vertical-align:top;
+    margin-top: 25px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    margin-left: 10px;
+    margin-right: 0;
+}
+/* End of header */
+
+/* top */
+.top{
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:350px;
+}
+.top{
+    color:whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+}
+.top h1{
+    padding-top:50px;
+    padding-bottom: 30px;
+}
+.top p{
+    padding: 0 200px 0 200px; 
+}
+
+/* end of top */
+
+main{
+    background-color: #4D4C7D;
+    height: 500px;
+    margin: 0 auto;
+}
+main>div {
+    width: 50%;
+    display: inline-block;
+}
+.cont1_img{
+    width:400px;
+    height:200px;
+    vertical-align: top; 
+}
+.cont1_head{
+    text-align:start;
+    text-align: center;
+    padding-top: 10%; 
+}
+
+
+section{
+    background-color:#4D4C7D;
+    max-width: 1210px;
+    height: 500px;
+    margin: 0 auto;
+}
+section>div {
+    width: 50%;
+    display: inline-block;
+}
+.cont2_img{
+    width:595px;
+    height:200px;
+    vertical-align: top; 
+}
+.cont2_head{
+    text-align:end;
+    text-align: center;
+    padding-top: 10%; 
+}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Koulen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color:#6A67CE;
+    --reserve-bg-color:#947EC3;
+    --text-color:#EFEFEF;
+    --border-color:#B689C0;
+    --header-font-size:4rem;
+    --h1-font-size:1.9em;
+    --paragraph-font-size: .8rem;
+    --paragraph-font-size-big: 1.3rem;
+    --header-font:'Akshar', sans-serif;
+    --paragraph-font:'Akshar', sans-serif;
+}
+.darkmode{
+    --main-bg-color:#112B3C;
+    --reserve-bg-color:#205375;
+    --text-color:#EFEFEF;
+    --border-color:#F66B0E;
+}
+
+body{
+    background-color: #000;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Nav */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+    position: fixed;
+    background: var(--main-bg-color);
+    width:min(100%, 1240px);
+    z-index: 1;
+}
+.nav_in{
+    display: flex;
+}
+.nav_in button{
+    padding: 1%;
+    margin: 4%;
+}
+.drak_mode{
+    background: transparent;
+    border:0;
+}
+.sign_in{
+    width: 120px;
+    height: 35px;
+    display: flex;
+    background-color: var(--border-color);
+    border: 0;
+    border-radius: 5px;
+}
+.sign_in p{
+    line-height: 30px;
+}
+/* End of Nav */
+
+/* Hero */
+
+.hero{
+    padding-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: var(--h1-font-size);
+    position: relative;
+    overflow: hidden;
+    height: 30vh;
+}
+.video-bg{
+    position: absolute;
+    z-index: -1;
+}
+/* End of Hero */
+
+/* Section */
+.section{
+    background:var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.section_text{
+    padding: 2%;
+    width: 100%;
+    color:var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_text h2{
+    font-size: var(--header-font-size);
+    font-family: var(--header-font);
+    text-transform: uppercase;
+}
+
+.section_text p{
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font);
+}
+.section_img{
+    width: 100%;
+}
+.section_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn{
+    margin-top: 3%;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    width: 100px;
+    padding: 1%;
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+}
+
+/* End of Section */
+
+/* Section2 */
+.section2{
+    background-color:var(--reserve-bg-color);
+}
+
+/* End of Section2 */
+
+
+/* Blogs */
+.blogs{
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    overflow-x: scroll;
+}
+.blog{
+    height: 120px;
+    background: red;
+    border: 1px solid #000;
+    margin-left: 2%;
+    flex: 1 0 150px;
+}
+/* End of blogs */
+
+
+/* Footer */
+footer{
+    height: 50px;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+}
+.lang select{
+    border: 0;
+    background: transparent;
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    font-size:var(--paragraph-font-size);
+}
+.lang select option{
+    color:black;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+/* End of Footer */
+
+/* Media */
+@media (min-width: 700px)  {
+    
+:root{
+    --header-font-size:8rem;
+    --paragraph-font-size: 1.3rem;
+}
+    .hero{
+        font-size: var(--header-font-size);
+        height: 80vh;
+        padding-top: 0;
+    }
+    .section{
+        height: 100vh;
+    }
+    .section{
+        flex-direction: row;
+    }
+    .section_text{
+        height: 100%;
+    }
+    .section_img{
+        height: 80%;
+        margin-top: 5%;
+    }
+    .btn{
+        margin-top: 3%;
+        border: 1px solid var(--border-color);
+        background-color: transparent;
+        width: 200px;
+        height: 50px;
+        padding: 1%;
+        font-family: var(--paragraph-font);
+        font-size: var(--paragraph-font-size);
+        color: var(--text-color);
+    }
+    .blogs{
+        background: green;
+        padding: 5%;
+    }
+}
+
+/* End of Media */

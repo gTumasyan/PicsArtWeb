@@ -1,0 +1,9 @@
+$breakpoint-tablet: 600px;
+
+@media (max-width: $breakpoint-tablet) {
+    .container{
+        max-width: 1440px;
+        margin:0 auto;
+        background: #E5E5E5;
+    } 
+}

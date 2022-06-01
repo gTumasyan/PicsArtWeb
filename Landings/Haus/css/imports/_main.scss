@@ -1,0 +1,355 @@
+
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1440px;
+    margin:0 auto;
+    background-color: #E5E5E5;
+    padding: 3%;
+} 
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: $regular-font;
+    background: transparent;
+    font-size: $regular-font-size;
+    text-transform: uppercase;
+    color:black;
+    padding: 2%;
+
+    li{
+        list-style: none;
+        display: inline;
+        margin: 20px;
+    }
+    p{
+        margin: 50xp;
+    }
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-basis: 1;
+    flex-shrink: 1;
+    
+    .head_image{
+        width: 50%;
+        background: url(/Landings/Haus/images/header.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position:contain;
+    }
+    .head_text{
+        width: 50%;
+        background: $primery-color;
+        padding: 5%;
+        padding-top: 15%;
+        h1{
+            font-family: $header-font;
+            font-size:$header-font-size;
+            color: $head-text-color;
+            font-weight: 400;
+        }
+        p{
+            font-family: $regular-font;
+            font-size: $regular-font-size;
+            color: $head-text-color;
+            padding-top: 5%;
+        }
+        button{
+            margin-top: 10%;
+            width: 180px;
+            height: 52px;
+            border: 1px solid #FFFFFF;
+            border-radius: 0px;
+            background: transparent;
+        }
+    }
+}
+.recensions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: $regular-font;
+    font-size: $regular-font-size;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+    .rec{
+        flex-basis: 1;
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+
+        p{
+            padding-bottom: 10%;
+        }
+    }
+}
+.section1{
+    padding: 5%;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 5%;
+    h2{
+        text-align: center;
+        font-family:$header-font;
+        font-size: $header-font-size;
+        font-weight: 400;
+        padding-bottom: 8%;
+    }
+    .section1_blog{
+        display: flex;
+        justify-content: space-between;
+        .blog{
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            h6{
+                font-family: $header-font;
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+            p{
+                font-family: $regular-font;
+                font-size: $regular-font-size;
+                padding-top: 5%;
+            }
+            bottom{
+                margin-top: 10%;
+                width: 180px;
+                height: 52px;
+                border: 0px;
+                border-radius: 0px;
+                background: black;
+                color: #FFFFFF;
+                line-height: 52px;
+                font-family: $regular-font;
+                font-size: $regular-font-size;
+            }
+        }
+    }
+}
+.section2_text{
+    display: flex;
+    justify-content: flex-start;
+    align-items:stretch;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid $border-color;
+    h5{
+        width: 60%;
+        font-family: $header-font;
+        font-size: $header-font-size;
+    }
+    p{
+        width: 30%;
+        font-family: $regular-font;
+        font-size: $regular-font-size;
+        padding-right: 0;
+    }
+}
+.section3{
+    display: flex;
+    padding: 5% 0 5% 0;
+    .section3_text{
+        width: 40%;
+        padding-right: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4{
+            font-family: $header-font;
+            font-size: 2em;
+        }
+        p{
+            font-family: $regular-font;
+            font-size: $regular-font-size;
+            padding-top: 5%;
+        }
+    }
+    .section3_img{
+        width: 60%;
+    }
+}
+.quotes{
+    background: #000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    .quote{
+        text-align: center;
+        padding: 7%;
+        p{
+            font-family: $regular-font;
+            font-size: $regular-font-size;
+        }
+        h6{
+            font-family: $header-font;
+            font-size: 1em;
+            padding-top: 5%;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}
+.section4{
+    display: flex;
+    padding: 5% 0 5% 0;
+    .section4_img{
+        width: 40%;
+    }
+    .section4_text{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        h2{
+            font-family: $header-font;
+            font-size:3em;
+        }
+        p{
+            font-family: $regular-font;
+            font-size: $regular-font-size;
+            padding-top: 22%;
+        }
+        span{
+            font-family: $regular-font;
+            font-size: $regular-font-size;
+            padding-top: 5%;
+        }
+    }
+}
+
+.mood{
+    background: url("/Landings/Haus/images/mood.png");
+    background-size: cover;
+    padding: 5%;
+    .mood_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: #000;
+        color: #FFFFFF;
+        width:50%;
+        padding: 5%;
+            h1{
+                font-family: $header-font;
+                font-size: 3.4em;
+                font-weight: 400;
+                padding-bottom: 10%;
+            }
+            p{
+                font-family: $regular-font;
+                font-size: $regular-font-size;
+                text-align: center;
+                padding-bottom: 10%;
+            }
+            button{
+                background:#FFFFFF;
+                color: #000;
+                width: 180px;
+                height: 52px;
+            }
+    }
+    .mood_social{
+        margin-top: 5%;
+        width:50%;
+        padding: 3%;
+        background:#000;
+        color: #FFFFFF;
+        font-family: $regular-font;
+        font-size: $regular-font-size;
+        text-align: center;
+            .social{
+                display: flex;
+                padding-top: 5%;
+                justify-content: space-around;
+            }
+    }
+}
+.main_footer{
+    background: #000;
+    color: #FFFFFF;
+    padding: 5%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    .box1{
+        width: 40%;
+        border-bottom: 1px solid $border-color;
+        h2{
+            font-family: $header-font;
+            font-size: 2.6em;
+            font-weight: 400;
+        }
+        p{
+            font-family: $regular-font;
+            font-size: $regular-font-size;
+            padding-top: 8%;
+        }
+        .submit{
+            padding-top: 10%;
+            display: flex;
+            justify-content:space-between;
+            align-items: baseline;
+            padding-top: 5%;
+            p{
+                color:#818181;
+            }
+            button{
+                background: none;
+                color:#FFFFFF;
+                font-family: $regular-font;
+                font-size: $regular-font-size;
+            }
+        }
+    }
+    span{
+        font-family: $regular-font;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    li{
+        margin-top: 10%;
+        list-style: none;
+        font-family: $regular-font;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.copyright{
+    width: 100%;
+    background: #000;
+    color: #FFFFFF;
+    display: flex;
+    padding: 3%;
+    span{
+        font-family: $regular-font;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    ul{
+        width: 60%;
+    }
+    li{
+        display: inline;
+        margin-top: 10%;
+        list-style: none;
+        font-family: $regular-font;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        padding-left: 5%;
+    }
+}

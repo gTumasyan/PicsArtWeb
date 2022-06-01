@@ -13,7 +13,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  background: #E5E5E5;
+  background-color: #E5E5E5;
   padding: 3%;
 }
 
@@ -55,7 +55,7 @@ header {
 
 header .head_image {
   width: 50%;
-  background: url(/Haus/images/header.png);
+  background: url(/Landings/Haus/images/header.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: contain;
@@ -320,7 +320,7 @@ header .head_text button {
 }
 
 .mood {
-  background: url("/Haus/images/mood.jfif");
+  background: url("/Landings/Haus/images/mood.png");
   background-size: cover;
   padding: 5%;
 }
@@ -484,5 +484,11 @@ header .head_text button {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 5%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    background: #000000;
+  }
 }
 /*# sourceMappingURL=main.css.map */

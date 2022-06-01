@@ -149,7 +149,7 @@ body{
 
 /* Blogs */
 .blogs{
-    background: green;
+    background: var(--main-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,10 +158,19 @@ body{
 }
 .blog{
     height: 120px;
-    background: red;
-    border: 1px solid #000;
+    background: url("/Homework_11/images/1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
     margin-left: 2%;
+    padding: 5%;
     flex: 1 0 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color:var(--text-color);
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font);
 }
 /* End of blogs */
 

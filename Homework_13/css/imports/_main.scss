@@ -1,0 +1,157 @@
+@mixin BgImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $regular-font-family;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+header{
+    background: url(/Homework_13/images/background.jpg);
+    @include BgImage;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background: rgba($color: #bcf8fa, $alpha: .2);
+            padding: 2%;
+            .main{
+                background: $primery-bg-color;
+                color:$text-color;
+                padding: 8px;
+                border-radius: 8px;
+            }
+                li {
+                    display: inline;
+                    margin-left: 50px;
+                        a {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-size: $regular-font-size;
+                            font-family: $regular-font-family;
+                            color: $text-color;                             
+                        }
+                }
+        }
+        .text_part {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20%;
+                h1{
+                    font-family: $main-font-family;
+                    font-size: 190px;
+                    line-height: 160px;
+                    margin-left: -10px;
+                    color: transparent;
+                    background: url(/Homework_13/images/back.png);
+                    -webkit-background-clip: text;
+                    background-position: 0 0;
+                    animation: back 20s linear infinite;
+                }
+                @keyframes back {
+                    100% {
+                        background-position: 2000px 0;
+                    }
+                }
+                span{
+                    padding: 10px;
+                    border:1px solid $primery-bg-color;
+                    color: $text-color;
+                }
+                p{
+                    color:$text-color;
+                    padding: 2%;
+                }
+        }
+} 
+main{
+    font-family: $regular-font-family;
+        .first{
+            display: flex;
+            justify-content: space-around;
+            background:rgba($color: $primery-bg-color, $alpha: 1);
+                .social-icons {
+                    position: sticky;
+                    top: 0;  
+                    padding: 2%;
+                    height: 100%;
+                }
+                .first_main {
+                    padding: 2%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 300px 200px;
+                    gap: 10px;
+                        .blog1_img{
+                            background: url(/Homework_13/images/blog.jpg);
+                            @include BgImage;
+                            height: 100%;
+                        }
+                        .blog2_img{
+                            background: url(/Homework_13/images/blog1.jpg);
+                            @include BgImage;
+                            height: 100%;
+                        }
+                        .blog3_img{
+                            background: url(/Homework_13/images/blog3.jpg);
+                            @include BgImage;
+                            height: 100%;
+                        }
+                        .blog{
+                            .blog_text {
+                                padding: 2%;
+                                    h2{
+                                        font-family: $main-font-family;
+                                        text-transform: uppercase;
+                                        color: $text-color;
+                                    }
+                                    p{
+                                        font-family: $regular-font-family;
+                                        color: $text-color;
+                                    }
+                            }
+                        }
+                }
+        }
+        .second {
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+                .list_part{
+                    background: rgba(0, 0, 0, 0.863);
+                    color:$text-color;
+                    font-family: $regular-font-family;
+                    padding: 35% 15%;
+                    ul{
+                        list-style-type: none;
+                            li {
+                                padding-top: 10%; 
+                                    a{
+                                        text-decoration: none;
+                                        text-transform: uppercase;
+                                        font-size: $regular-font-size;
+                                        font-family: $regular-font-family;
+                                        color: $text-color;
+                                    }
+                            }
+                    }
+                }
+                .text_part{
+                    padding: 5%;
+                    background: $text-color;
+                }
+        }
+}

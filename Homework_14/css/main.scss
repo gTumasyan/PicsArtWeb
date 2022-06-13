@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+// Vendors
+@import 'imports/vendors/media';
+// Abstracts
+@import 'imports/abstracts/variables';
+@import 'imports/abstracts/mixins';
+
+// Base
+@import 'imports/base/reset';
+
+// Components
+@import 'imports/components/buttons';
+@import 'imports/components/burger';
+
+// Layout
+@import 'imports/layout/header';
+@import 'imports/layout/section';
+@import 'imports/layout/blog';
+@import 'imports/layout/footer';

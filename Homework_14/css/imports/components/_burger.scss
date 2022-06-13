@@ -1,0 +1,27 @@
+.active {
+    align-self: center;
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    position: relative;
+    transition: all .1s ease;
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            height: 2px;
+            width: 100%;
+            background: #000;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            transform: rotate(45deg);
+        }
+}

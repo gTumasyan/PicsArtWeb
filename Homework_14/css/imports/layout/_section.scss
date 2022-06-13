@@ -1,0 +1,65 @@
+.main {
+    background: $dark-green;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    color: #fff;
+        &__text {
+            text-align: center;
+            h2{
+                font-family: $header-font;
+                font-size: 3rem;
+                text-transform: capitalize;
+                line-height: 37px;
+                font-weight: 400;
+            }
+            p{
+                font-family: $secondary-font;
+                font-size: 1.6rem;
+                line-height: 24px;
+                padding-top: 2rem;
+            }
+            .btn {
+                margin-top: 2rem;
+            }
+
+            @include md {
+                text-align: left;
+                padding: 0 5rem;
+                h2{
+                    font-size: 4.5rem;
+                    text-transform: capitalize;
+                    line-height: 4.5rem;
+                    font-weight: 400;
+                    width: 50rem;
+                }
+                p{
+                    font-family: $secondary-font;
+                    font-size: 2rem;
+                    line-height: 24px;
+                    padding-top: 2rem;
+                }
+                .btn {
+                    margin-top: 2rem;
+                }
+            }    
+    }
+    @include lg {
+        padding: 5rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+            .main__text{
+                grid-column-start: 2;
+                grid-row-start: 1;
+            }
+            .main__img2{
+                grid-column: span 3;
+            }
+            .main__img1{
+                grid-column: 1 / 2;
+            }
+    }
+}

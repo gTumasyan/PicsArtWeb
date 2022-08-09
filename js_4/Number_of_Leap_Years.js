@@ -24,7 +24,7 @@ function numLeapYears(str) {
     while( first <= second){
         if ((0 == first % 4) && (0 != first % 100) || (0 == first % 400)) {
                     leapYearCount++
-                }
+        }
         first++
     }
 

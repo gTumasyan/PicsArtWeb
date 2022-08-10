@@ -19,6 +19,7 @@ body {
   width: 350px;
   height: 500px;
   background-color: #7FB5FF;
+  opacity: 80%;
 }
 .card_search {
   margin-bottom: 2%;
